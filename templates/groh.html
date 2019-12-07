@@ -7,10 +7,11 @@
   <title>Grøh</title>
   <br>
   <center><h1>GRØH</h1></center>
+  <br>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
     body {
-      color:FireBrick;
+      color:DarkBlue;
       background-color:Black;
     }
 
@@ -26,22 +27,69 @@
     top: 100px;
   }
 
+  .bioquote {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+}
+
     .biography {
+    font-family: Monaco, arial, Times New Roman;
+    font-size: 20;
     position: absolute;
-    left: 700px;
-    top: 200px;
+    left: 4px;
+    top: 140px;
+    }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
     }
 
+    td, th {
+      border: 1px solid #FFFFFF;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color:Black;
+    }
 
   </style>
 </head>
 <body>
-<div class = "portrait"><img src="https://www.fightersgeneration.com/nf6/char/groh-soulcalibur6-story-portrait-artwork-by-hiroaki.jpg" alt = "Grøh" height = "600" width = "300"></div>
+<div class = "portrait"><img src="https://www.fightersgeneration.com/nf6/char/groh-soulcalibur6-story-portrait-artwork-by-hiroaki.jpg" alt = "Grøh" height = "600" width = "300" id="imgClickAndChange" onclick="changeImage()"></div>
 <br>
-<div class = "biotitle"><h1>Grøh, The Agent in Black</h1></div>
-<div class = "biotitle"><h2><i>"Do not hold back. However, I will."</i></h2>
-<div class = "biography"><p>Born: Denmark-Norway</p>
-<div class = "biography"><p>Weapon: Twin Sabers</p>
-<div class = "biography"><p>Weapon Name: Arondight Replica</p>
+<div class = "biotitle"><h1>Grøh, The Agent in Black</h1></div><br>
+<div class = "bioquote"><h2><i>"Do not hold back. However, I will."</i></h2>
+  <table>
+    <tr>
+      <th>Country of Origin</th>
+      <th>Weapon/Weapon Name</th>
+      <th>Fighting Style</th>
+    </tr>
+    <tr>
+      <td>Denmark-Norway</td>
+      <td>Twin Sabers; Arondight Replica</td>
+      <td>Aval Twinblade Swordsmanship</td>
+    </tr>
+  </table>
+<div class = "biography"><p>The mysterious Aval Organization was a secret group with origins rooted in ancient times. They say the group came to be when a king used the spirit sword to defeat its cursed counterpart, and with his dying breath, entrusted them with both the blade and his unfinished mission. Each new generation has taken on the group’s mission to rid the world of "Outsiders"—those connected with the cursed sword.
+<br>
+One such member was Grøh, about whom little is known save for that he was a fearsome warrior. Though his fighting style is shrouded in mystery, he is believed to have wielded two swords. Some also say he kept a certain technique close to his chest…</p>
 </body>
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "https://www.fightersgeneration.com/nf6/char/groh-soulcalibur6-story-portrait-artwork-by-hiroaki.jpg")
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.fightersgeneration.com/nf6/char/groh-soulcalibur6-story-portrait-artwork-by-hiroaki2.jpg";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange").src = "https://www.fightersgeneration.com/nf6/char/groh-soulcalibur6-story-portrait-artwork-by-hiroaki.jpg";
+        }
+    }
+</script>
 </html>

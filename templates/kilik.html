@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <br>
+  <center><h1>KILIK</h1></center>
+  <br>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      color:Red;
+      background-color:Black;
+    }
+
+    .portrait {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    }
+
+    .biotitle {
+    position: absolute;
+    left: 600px;
+    top: 100px;
+  }
+
+  .bioquote {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+  }
+
+  .biography {
+  font-family: Monaco, arial, Times New Roman;
+  font-size: 20;
+  position: absolute;
+  left: 4px;
+  top: 140px;
+    }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+  td, th {
+    border: 1px solid #FFFFFF;
+    text-align: left;
+    padding: 8px;
+    }
+
+  tr:nth-child(even) {
+    background-color:Black;
+    }
+  </style>
+</head>
+<body>
+  <div class = "portrait"><img src="" alt = "" height = "600" width = "300" id="imgClickAndChange" onclick="changeImage()"></div>
+  <br>
+  <div class = "biotitle"><h1></h1></div><br>
+  <div class = "bioquote"><h2><i>""</i></h2>
+    <table>
+      <tr>
+        <th>Country of Origin</th>
+        <th>Weapon/Weapon Name</th>
+        <th>Fighting Style</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  <div class = "biography"><p></p>
+</body>
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "")
+        {
+            document.getElementById("imgClickAndChange").src = "";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange").src = "";
+        }
+    }
+</script>
+</html>
