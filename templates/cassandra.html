@@ -58,7 +58,7 @@
   </style>
 </head>
 <body>
-  <div class = "portrait"><img src="" alt = "" height = "600" width = "300" id="imgClickAndChange" onclick="changeImage()"></div>
+  <div class = "portrait"><img src="portraits/Cassandra1.png" alt = "Cassandra" height = "600" width = "300" id="imgClickAndChange" onclick="changeImage()"></div>
   <br>
   <div class = "biotitle"><h1></h1></div><br>
   <div class = "bioquote"><h2><i>""</i></h2>
@@ -67,8 +67,12 @@
         <th>Country of Origin</th>
         <th>Weapon/Weapon Name</th>
         <th>Fighting Style</th>
+        <th>Japanese Voice Actor</th>
+        <th>English Voice Actor</th>
       </tr>
       <tr>
+        <td>Athens, Greece</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -79,13 +83,13 @@
 <script language="javascript">
     function changeImage() {
 
-        if (document.getElementById("imgClickAndChange").src == "")
+        if (document.getElementById("imgClickAndChange").src == "portraits/Cassandra1.png")
         {
-            document.getElementById("imgClickAndChange").src = "";
+            document.getElementById("imgClickAndChange").src = "portraits/Cassandra2.png";
         }
         else
         {
-            document.getElementById("imgClickAndChange").src = "";
+            document.getElementById("imgClickAndChange").src = "portraits/Cassandra1.png";
         }
     }
 </script>
